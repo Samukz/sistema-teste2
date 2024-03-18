@@ -75,7 +75,18 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 
 			</plugin>
-		</plugins>
-	</build>
+		
+		<!-- Added maven-compiler-plugin configuration -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Ensure you use an appropriate version here -->
+                <configuration>
+                    <release>17</release> <!-- This tells Maven to use Java 17 -->
+                </configuration>
+            </plugin>
+            <!-- End of maven-compiler-plugin configuration -->
 
+        </plugins>
+    </build>
 </project>
