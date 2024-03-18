@@ -14,7 +14,9 @@
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
+		<maven.compiler.source>11</maven.compiler.source> <!-- Troque '11' pela versão do Java que você está usando -->
+    <maven.compiler.target>11</maven.compiler.target> <!-- Troque '11' pela mesma versão do Java -->
 
 	</properties>
 	
