@@ -1,0 +1,39 @@
+                <div th:replace="compartilhado/header"></div>
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Nova</h1>
+                    <p class="mb-4">Editar usuario</p>
+
+
+                    <div class="card shadow mb-4" style="padding: 30px;">
+
+                        <form th:action="@{'/usuarios/' + ${usuario.id} + '/atualizar'}" method="post">
+
+                            <div class="form-group">
+                                <label for="nome">Usuario</label>
+                                <input type="text" class="form-control" id="nome" name="nome" th:value="${usuario.nome}" aria-describedby="emailHelp"
+                                    placeholder="Digite usuário">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="nome">Senha</label>
+                                <input type="senha" class="form-control" id="senha" name="senha" th:value="${usuario.senha}" aria-describedby="emailHelp"
+                                    placeholder="Digite sua senha">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+
+                        
+                    </div>
+                    
+                </div>
+                <!-- /.container-fluid -->
+                
+                <div th:replace="compartilhado/footer"></div>
